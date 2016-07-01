@@ -1,0 +1,45 @@
+#outerhead {
+	width: 100%;
+	margin-top: 5px;
+	background-color: lightgray;
+	text-align: center;
+	vertical-align: middle;
+}
+
+#innerhead {
+	width: 50%;
+	margin: 0 auto;
+	vertical-align: center;
+
+}
+
+#divmenu {
+	float: left;
+	width: 20%;
+}
+
+
+#divitem {
+	background-color: cyan;
+	padding: 10px;
+	margin: 20px;
+	height: 60px;
+	vertical-align: ;
+
+}
+#divtexto{
+	float: left;
+	width: 50%;
+	text-align: justify;
+}
+
+#divinformacoes {
+	float: right;
+	width: 15%;
+	position: relative;
+	background-color: cyan;
+	margin: 20px;
+	padding: 20px;
+	text-align: justify;
+}
+

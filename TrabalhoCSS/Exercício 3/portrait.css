@@ -1,0 +1,40 @@
+#outerhead {
+	width: 100%;
+	height: 200px;
+	margin-top: 5px;
+	background-color: lightgray;
+	text-align: center;
+	vertical-align: middle;
+	float: inherit;
+}
+
+#innerhead {
+	width: 50%;
+	margin: 0 auto;
+	vertical-align: center;
+
+}
+
+#divmenu {
+	float: inherit;
+	width: 100%;
+	position: relative;
+}
+
+#divitem {
+	background-color: cyan;
+	margin: 5px;
+}
+#divtexto{
+	float: inherit;
+	width: 100%;
+	text-align: justify;
+}
+
+#divinformacoes {
+	float: inherit;
+	width: 100%;
+	background-color: cyan;
+	text-align: justify;
+}
+

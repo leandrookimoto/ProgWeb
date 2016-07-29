@@ -2,7 +2,7 @@ img{
 			height: 40px;
 			width: 40px;
 		}
-		
+
 		table, td {
 		    margin: 0;
 		    padding: 0;
@@ -13,7 +13,7 @@ img{
 		    line-height: 0px;
 		    float: left;
 		}
-		
+
 		#peca1{
 			display: inline-block;
 			background-color: #3bb300;
@@ -42,4 +42,57 @@ img{
 		}
 		#tabuleiro{
 			display: inline-block;
+		}
+		button {
+	    background-color: #4CAF50;
+	    border: none;
+	    color: white;
+	    padding: 15px 32px;
+	    text-align: center;
+	    text-decoration: none;
+	    display: inline-block;
+	    font-size: 14px;
+			border-radius: 10px;
+		}
+		#win{
+			z-index: 4;
+			left:0;
+			top:0;
+			width: 100%;
+			height: 100%;
+			background-color: rgba(0,0,0,0.2);
+			position: fixed;
+			display: none;
+		}
+		#win_1{
+			position: relative;
+			width: 100%;
+			height: 40px;
+			margin-top: 150px;
+
+		}
+		#win_2{
+			background-color: white;
+			height: 40px;
+			width: 200px;
+			margin-left:40%;
+		}
+		#win_3{
+			margin: auto;
+			font-size: 20px;
+			padding: 10px;
+		}
+		#winner{
+			width: 40px;
+			height: 100%;
+			float: left;
+		}
+		#close_win{
+			float: right;
+			font-size: 20px;
+			font-weight: bold;
+			color: inherit;
+			margin: 3px;
+			height: 100%;
+			cursor: pointer;
 		}

@@ -17,7 +17,13 @@ var suaVez = 0;
 var ganhou = false;
 var table = document.getElementById("tabuleiro");
 var btnIniciar = document.getElementById("iniciar");
+var winnerClose = document.getElementById("close_win");
+var divWinner = document.getElementById("win");
+var imgWinner = document.getElementById("winner");
 
+winnerClose.onclick = function(){
+  divWinner.style.display="none";
+}
 
 table.setAttribute('border-spacing','0');
 for (i = 0; i <= 16; i++){
@@ -65,7 +71,7 @@ for (i = 0; i <= 16; i++){
                     var i = parseInt(element.target.id.split("-")[0]);
                     var j = parseInt(element.target.id.split("-")[1]);
                     if (imgName=='P5b.png' || imgName=='P5p.png') {
-                        alert("Já existe uma peça aí! ");
+
                     }else{
                         if(suaVez%2 ==0){
                             peca1.style.backgroundColor="inherit";
@@ -78,7 +84,8 @@ for (i = 0; i <= 16; i++){
                             suaVez++;
                             ganhou = pos1(i,j,0,p5b)||pos2(i,j,0,p5b)||pos3(i,j,0,p5b)||pos4(i,j,0,p5b);
                             if(ganhou){
-                                alert("BRANCO GANHOU");
+                              imgWinner.src = "Image/Peça1.png";
+                              divWinner.style.display="block";
                             }
 
                         }else{
@@ -91,7 +98,8 @@ for (i = 0; i <= 16; i++){
                             suaVez++;
                             ganhou = pos1(i,j,0,p5p)||pos2(i,j,0,p5p)||pos3(i,j,0,p5p)||pos4(i,j,0,p5p);
                             if(ganhou){
-                                alert("PRETO GANHOU");
+                              imgWinner.src="Image/Peça2.png";
+                              divWinner.style.display="block";
                             }
                         }
                     }
